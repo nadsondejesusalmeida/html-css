@@ -13,9 +13,10 @@
 	padding: 0;
 }
 
+html,
 body {
 	min-height: 100dvh;
-	background-color: dimgray;
+	background-color: gray;
 }
 
 article header {
@@ -26,6 +27,7 @@ article header {
 
 article header > h1 {
 	padding-top: 50px;
+	font-variant: small-caps;
 	font-size: 10vw;
 	font-family: var(--font1);
 }
@@ -33,6 +35,7 @@ article header > h1 {
 article header > p {
 	padding-bottom: 50px;
 	font-variant: small-caps;
+	font-size: 3vw;
 }
 
 article header > p a,
@@ -55,6 +58,7 @@ article section {
 
 article section > p {
 	padding-bottom: 2em;
+	font-family: var(--font2);
 }
 
 article section.normal {
@@ -84,12 +88,9 @@ article section#image02 {
 	background-image: url('../images/background002.jpg');
 }
 
-article section > p {
-	font-family: var(--font2);
-}
-
 footer {
 	padding: 10px;
+	font-size: 3vw;
 	text-align: center;
 	background-color: #000;
 	color: #FFF;
