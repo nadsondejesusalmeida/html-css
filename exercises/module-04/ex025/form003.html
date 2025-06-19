@@ -7,7 +7,7 @@
 	<title>Terceiro Formulário</title>
 </head>
 <body>
-	<form action="cadastro.php" method="GET" autocomplete="om">
+	<form action="icadastro.php" method="GET" autocomplete="om">
 		<p>
 			<label for="nome">Nome:</label>
 			<input type="text" name="nome" id="nome" placeholder="Nome Completo" minlength="10" maxlength="30" required />
@@ -23,6 +23,10 @@
 		<p>
 			<label for="letivo">Data da Prova:</label>
 			<input type="date" name="letivo" id="letivo" value="2020-02-25" required />
+		</p>
+		<p>
+			<label for="hora">Horário da Prova:</label>
+			<input type="time" name="hora" id="hora" value="10:35" />
 		</p>
 		<p>
 			<input type="submit" value="Enviar" />
