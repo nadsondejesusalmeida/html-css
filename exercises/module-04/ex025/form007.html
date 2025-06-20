@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sétimo Formulário</title>
+</head>
+<body>
+	<h1>Sétimo Formulário</h1>
+	<form action="cadastro.php" method="POST" autocomplete="on">
+		<p>
+			<label for="est">Estado:</label>
+			<select name="estado" id="est" required>
+				<option value="" selected disabled>Escolha</option>
+				<optgroup label="Região Nordeste">
+					<option value="AL">Alagoas (AL)</option>
+					<option value="BA">Bahia (BA)</option>
+					<option value="CE">Ceará (CE)</option>
+					<option value="MA">Maranhão (MA)</option>
+					<option value="PB">Paraíba (PB)</option>
+					<option value="PE">Pernambuco (PE)</option>
+					<option value="PI">Piauí (PI)</option>
+					<option value="RN">Rio Grande do Norte (RN)</option>
+					<option value="SE">Sergipe (SE)</option>
+				</optgroup>
+				<optgroup label="Região Norte">
+					<option value="AC">Acre (AC)</option>
+					<option value="AP">Amapá (AP)</option>
+					<option value="AM">Amazonas (AM)</option>
+					<option value="PA">Pará (PA)</option>
+					<option value="RO">Rondônia (RO)</option>
+					<option value="RR">Roraima (RR)</option>
+					<option value="TO">Tocantins (TO)</option>
+				</optgroup>
+				<optgroup label="Região Centro-Oeste">
+					<option value="GO">Goiás (GO)</option>
+					<option value="MT">Mato Grosso (MT)</option>
+					<option value="MS">Mato Grosso do Sul (MS)</option>
+				</optgroup>
+				<optgroup label="Região Sudeste">
+					<option value="MG">Minas Gerais (MG)</option>
+					<option value="SP">São Paulo (SP)</option>
+					<option value="RJ">Rio de Janeiro (RJ)</option>
+					<option value="ES">Espírito Santo (ES)</option>
+				</optgroup>
+				<optgroup label="Região Sul">
+					<option value="SC">Santa Catarina (SC)</option>
+					<option value="PR">Paraná (PR)</option>
+					<option value="RS">Rio Grande do Sul (RS)</option>
+				</optgroup>
+			</select>
+		</p>
+		<p>
+			<label for="profission">Profissão:</label>
+			<input type="text" name="profissao" id="profission" list="listprof" />
+			<datalist id="listprof">
+				<option>Administrador</option>
+				<option>Cozinheiro</option>
+				<option>Programador</option>
+				<option>Lavrador</option>
+			</datalist>
+		</p>
+		<p>
+			<label for="message">Mensagem:</label> <br />
+			<textarea name="message" id="message" rows="10" cols="40" placeholder="Sua mensagem aqui..."></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Enviar" />
+			<input type="reset" value="Limpar" />
+		</p>
+	</form>
+</body>
+</html>
