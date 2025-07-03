@@ -7,16 +7,16 @@
 	<title>Flexible Box</title>
 	<style type="text/css" media="all">
 		div.containers {
-			height: 500px;
 			display: flex;
-			flex-flow: row-reverse nowrap;
-			justify-content: space-around;
-			align-items: center;
+			flex-flow: row nowrap;
 			background-color: lightsalmon;
 		}
 		
 		div.containers > div.items {
 			text-align: center;
+			flex-basis: 250px;
+			flex-grow: 1;
+			flex-shrink: 1;
 			background-color: lightskyblue;
 			color: white;
 			border: 1px solid black;
@@ -28,10 +28,6 @@
 		<div class="items">A</div>
 		<div class="items">B</div>
 		<div class="items">C</div>
-		<div class="items">D</div>
-		<div class="items">E</div>
-		<div class="items">F</div>
-		<div class="items">G</div>
 	</div>
 </body>
 </html>
