@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dropzone - Atributo Global (HTML)</title>
+	<style type="text/css" media="all">
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+		
+		.drop {
+			width: 200px;
+			height: 200px;
+			border: 1px solid crimson;
+		}
+	</style>
+</head>
+<body>
+	<!-- Usado para definir o local onde será depositado. Infelizmente, no momento que esse arquivo foi feito, os navegadores ainda nã9 estão compatíveis com essa função via HTML; portanto, é necessário usar JS (JavaScript) para funcionar. Disponível em: dropzone-js.html -->
+	<div class="box" draggable="true"></div>
+	<div class="drop" dropzone="copy"></div>
+</body>
+</html>
