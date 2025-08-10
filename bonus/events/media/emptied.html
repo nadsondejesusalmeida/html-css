@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Evento: emptied</title>
+	<style type="text/css" media="all">
+		video {
+			width: 80vw;
+		}
+		
+		#error-message {
+			color: #FF0000;
+		}
+	</style>
+</head>
+<body>
+	<video id="my-video" onemptied="debug(event)" controls>
+		<source src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" type="video/mp4" />
+		<p>Seu navegador não suporta vídeo.</p>
+	</video>
+	<p id="error-message"></p>
+	<button type="button" id="simulate-emptied">Simular "emptied"</button>
+	<script>
+		const myVideo = document.getElementById('my-video');
+		const errorMessage = document.getElementById('error-message');
+		const simulateEmptied = document.getElementById('simulate-emptied');
+		
+		function debug(e) {
+			console.log('Evento: ' + e.type);
+			errorMessage.textContent = 'O conteúdo da mídia ficou indisponível';
+		}
+		
+		simulateEmptied.addEventListener('click', () => {
+			myVideo.src = '';
+			myVideo.load();
+		});
+	</script>
+</body>
+</html>
