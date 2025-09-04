@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Propriedade: width</title>
+	<style type="text/css" media="all">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			height: 100dvh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		div.container {
+			width: 300px;
+			border: 3px solid black;
+			overflow-x: scroll;
+		}
+		
+		div.container > div[class^="content"] {
+			margin-bottom: 10px;
+			height: 40px;
+			border-width: 1px;
+			border-style: solid;
+			overflow: scroll;
+		}
+		
+		.content-percent {
+			width: 50%;
+			border-color: red;
+		}
+		
+		.content-viewport {
+			width: 50vw;
+			border-color: blue;
+		}
+		
+		.content-fit {
+			width: fit-content;
+			border-color: green;
+		}
+		
+		.content-min {
+			width: min-content;
+			border-color: yellow;
+		}
+		
+		.content-max {
+			width: max-content;
+			border-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="content-percent">PERCENT: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, molestias, consequuntur. Quia architecto, a voluptatibus illo possimus amet ipsa sit in quae et at sunt porro, beatae dolores aliquam illum voluptate dolorem sapiente autem eum! Provident recusandae, eveniet nobis odit harum mollitia. Et, similique eveniet unde, maiores sed itaque. Vitae.</div>
+		<div class="content-viewport">VIEWPORT: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, aliquam ipsum. Consequuntur vel quis sunt alias perferendis in. Quis, sunt deleniti? Dolore sint iusto reprehenderit illum et quis molestiae laudantium, optio beatae nihil libero, dignissimos sapiente aut aperiam repellat illo similique sequi ab voluptatem. Atque quia reprehenderit voluptatum quisquam omnis.</div>
+		<div class="content-fit">FIT: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+		<div class="content-min">MIN: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos reiciendis mollitia similique nisi blanditiis tempore repudiandae libero porro beatae, magni iure aperiam repellendus quia voluptatibus incidunt accusantium iste obcaecati asperiores magnam, vel! Cum dolorum maxime, magnam aliquid, eligendi quas dicta saepe ea molestias numquam debitis ad sed autem provident natus.</div>
+		<div class="content-max">MAX: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, consequuntur suscipit ullam hic voluptatibus deserunt, dignissimos necessitatibus animi blanditiis nostrum cupiditate dicta laborum distinctio placeat fuga atque harum repellat! Harum eum quas voluptas ab perferendis autem voluptatibus eaque accusantium unde inventore dolor commodi magni, delectus quidem aut iste similique repellat!</div>
+	</div>
+</body>
+</html>
