@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexible Box</title>
+	<style type="text/css" media="all">
+		div.containers {
+			display: flex;
+			background-color: lightsalmon;
+		}
+		
+		div.containers > div.items {
+			padding: 20px;
+			text-align: center;
+			background-color: lightskyblue;
+			color: white;
+			border: 1px solid black;
+		}
+		
+		div.containers > div.items:nth-child(1) {
+			order: 0;
+		}
+		
+		div.containers > div.items:nth-child(2) {
+			order: -2;
+		}
+		
+		div.containers > div.items:nth-child(3) {
+			order: 8;
+		}
+		
+		div.containers > div.items:nth-child(4) {
+			order: -4;
+		}
+		
+		div.containers > div.items:nth-child(5) {
+			order: 10;
+		}
+		
+		div.containers > div.items:nth-child(6) {
+			order: 0;
+		}
+		
+		div.containers > div.items:nth-child(7) {
+			order: 5;
+		}
+	</style>
+</head>
+<body>
+	<div class="containers">
+		<div class="items">A</div>
+		<div class="items">B</div>
+		<div class="items">C</div>
+		<div class="items">D</div>
+		<div class="items">E</div>
+		<div class="items">F</div>
+		<div class="items">G</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formatação de texto correto</title>
+</head>
+<body>
+	<h1>
+		Formatações de textos
+	</h1>
+	<h2>
+		Negrito / Destaque
+	</h2>
+	<p>
+		Aqui é um <b>termo em negrito</b> não semântico usando &lt;b&gt;.
+	</p>
+	<p>
+		Aqui é um <strong>termo em negrito</strong> semântico &lt;strong&gt;.
+	</p>
+	<h2>
+		Itálico / Ênfase
+	</h2>
+	<p>
+		Aqui é um <i>termo em itálico</i> não semântico usando &lt;i&gt;.
+	</p>
+	<p>
+		Aqui é um <em>termo em itálico</em> semântico usando &lt;em&gt;.
+	</p>
+	<h2>
+		Marca texto
+	</h2>
+	<p>
+		Aqui é um <mark>marca texto</mark> na sua cor padrão usando &lt;mark&gt;.
+	</p>
+	<h2>
+		Texto deletado
+	</h2>
+	<p>
+		Aqui é um <strike>texto deletado</strike> que deve ser desconsiderado, apesar de lido, usando &lt;strike&gt; não semântico.
+	</p>
+	<p>Aqui é um <del>texto deletado</del> que deve ser desconsiderado, apesar de lido, usando &lt;del&gt; semântico.</p>
+	<h2>Texto inserido</h2>
+	<p>
+		Aqui é un texto <u>texto inserido</u> não semântico usando &lt;u&gt;.
+	</p>
+	<p>
+		Aqui é um <ins>texto inserido</ins> semântico usando &lt;ins&gt;.
+	</p>
+	<h2>
+		Textos sobrescrito e subscrito
+	</h2>
+	<p>
+		x<sup>2</sup>
+	</p>
+	<p>
+		X<sub>2</sub>
+	</p>
+	<h2>
+		Código-fonte
+	</h2>
+	<pre>
+		<code>
+num = int(input('Digite um número'));
+if num % 2 == 0:
+	print(f'O número {num} é par')
+else:
+	print(f'O númeri {num} é ímpar')
+	print('FIM DO PROGRAMA')
+		</code>
+	</pre>
+	<h2>
+		Citações
+	</h2>
+	<q>
+		Citações são aspas para citar algo, como você está vendo.
+	</q>
+	<h2>
+		Parágrafo de citação
+	</h2>
+	<blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p">
+		O PHP é uma linguagem de programação
+	</blockquote>
+	<h2>
+		Abreviações
+	</h2>
+	<p>
+		Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr title="Java Script">JS</abbr>.
+	</p>
+	<h2>
+		<bdo dir="rtl">Texto invertido</bdo>
+	</h2>
+	<p>
+		Pode inverter o texto usando &lt;bdo&gt; e o parâmetro <q>dir</q> com o valor <strong>rtl</strong>.
+	</p>
+ </body>
+</html>

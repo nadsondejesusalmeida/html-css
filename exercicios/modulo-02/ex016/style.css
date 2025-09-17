@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+	min-height: 100%;
+	background-image: linear-gradient(to top, #034159, #025951);
+	background-attachment: fixed;
+}
+
+main {
+	margin: auto;
+	padding: 10px;
+	width: 400px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #033548;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 1px 1px 0px #08a33f;
+	color: #0cf25d;
+}
+
+h2 {
+	color: #02735e;
+}
+
+p {
+	text-align: justify;
+}

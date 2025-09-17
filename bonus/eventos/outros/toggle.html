@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Evento: toggle</title>
+	<style type="text/css" media="all">
+		video {
+			width: 80vw;
+		}
+	</style>
+</head>
+<body>
+	<details ontoggle="debug(event)">
+		<summary>
+			HTML
+		</summary>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eaque itaque at iste odit est rerum. Unde placeat nihil rem voluptas in at vel debitis dolore officia, reiciendis! Maiores vero laboriosam obcaecati omnis iusto quos a velit dolorem rerum hic, aliquam commodi nobis consectetur voluptas eos dolore esse. Alias, id.
+		</p>
+	</details>
+	<script>
+		function debug(e) {
+			console.log('Evento: ' + e.type);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Terceiro Formulário</title>
+</head>
+<body>
+	<h1>Terceiro Formulário</h1>
+	<form action="icadastro.php" method="GET" autocomplete="om">
+		<p>
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Nome Completo" minlength="10" maxlength="30" required />
+		</p>
+		<p>
+			<label for="nota">Nota:</label>
+			<input type="number" name="nota" id="nota" min="0" max="10" step="0.1" placeholder="0 a 10" required />
+		</p>
+		<p>
+			<label for="data">Data do Expedição:</label>
+			<input type="month" name="data" id="data" value="2015-08" required />
+		</p>
+		<p>
+			<label for="letivo">Data da Prova:</label>
+			<input type="date" name="letivo" id="letivo" value="2020-02-25" required />
+		</p>
+		<p>
+			<label for="hora">Horário da Prova:</label>
+			<input type="time" name="hora" id="hora" value="10:35" />
+		</p>
+		<p>
+			<input type="submit" value="Enviar" />
+			<input type="reset" value="Limpar" />
+		</p>
+	</form>
+</body>
+</html>

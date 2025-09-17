@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tag: dialog</title>
+	<style type="text/css" media="all">
+		dialog::backdrop {
+			background-color: #00000050;
+		}
+	</style>
+</head>
+<body>
+	<h1>Caixa de Diálogo e Modal</h1>
+	<button type="button" id="open-dialog-box">Abrir caixa de diálogo</button>
+	<button type="button" id="open-modal">Abrir modal</button>
+	<dialog id="main-dialog">
+		Uma caixa de diálogo <span onclick="closeDialog()"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M24 26.1 13.5 36.6q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05L21.9 24 11.4 13.5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 21.9l10.5-10.5q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05L26.1 24l10.5 10.5q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z"/></svg></span>
+	</dialog>
+	<dialog id="main-modal">
+		Um modal <span onclick="closeModal()"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M24 26.1 13.5 36.6q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05L21.9 24 11.4 13.5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 21.9l10.5-10.5q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05L26.1 24l10.5 10.5q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z"/></svg></span>
+	</dialog>
+	<script>
+		const openDialogBox = document.querySelector('#open-dialog-box');
+		const closeDialogBox = document.querySelector('#close-dialog-box');
+		const openModal = document.querySelector('#open-modal');
+		const mainDialog = document.querySelector('#main-dialog');
+		const mainModal = document.querySelector('#main-modal');
+		
+		let dialogList = [mainDialog, mainModal];
+		
+		function closeDialog() {
+			mainDialog.close();
+		}
+		
+		function closeModal() {
+			mainModal.close();
+		}
+		
+		openDialogBox.addEventListener('click', e => {
+			mainDialog.show();
+		})
+		
+		openModal.addEventListener('click', e => {
+			mainModal.showModal();
+		})
+		
+		mainModal.addEventListener('click', e => {
+			const dialogDimesions = mainModal.getBoundingClientRect();
+			
+			if (
+				e.clientX < dialogDimesions.left ||
+				e.clientX > dialogDimesions.right ||
+				e.clientY < dialogDimesions.top ||
+				e.clientY > dialogDimesions.bottom
+			) {
+				mainModal.close();
+			}
+		})
+	</script>
+</body>
+</html>

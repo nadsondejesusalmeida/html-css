@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexible Box</title>
+	<style type="text/css" media="all">
+		div.containers {
+			height: 400px;
+			display: flex;
+			align-items: flex-start;
+			background-color: lightsalmon;
+		}
+		
+		div.containers > div.items {
+			padding: 20px;
+			text-align: center;
+			background-color: lightskyblue;
+			color: white;
+			border: 1px solid black;
+		}
+		
+		div.containers > div.items:nth-child(1) {
+			align-self: auto;
+		}
+		
+		div.containers > div.items:nth-child(2) {
+			align-self: flex-start;
+		}
+		
+		div.containers > div.items:nth-child(3) {
+			align-self: flex-end;
+		}
+		
+		div.containers > div.items:nth-child(4) {
+			align-self: center;
+		}
+		
+		div.containers > div.items:nth-child(5) {
+			align-self: stretch;
+		}
+		
+		div.containers > div.items:nth-child(6) {
+			align-self: auto;
+		}
+		
+		div.containers > div.items:nth-child(7) {
+			align-self: flex-end;
+		}
+	</style>
+</head>
+<body>
+	<div class="containers">
+		<div class="items">A</div>
+		<div class="items">B</div>
+		<div class="items">C</div>
+		<div class="items">D</div>
+		<div class="items">E</div>
+		<div class="items">F</div>
+		<div class="items">G</div>
+	</div>
+</body>
+</html>

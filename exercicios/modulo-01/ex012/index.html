@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo</title>
+ </head>
+
+<body>
+	<h1>Vídeo</h1>
+	<video id="test" width="400" controls muted autoplay>
+		<source src="media/videos/video-test.mp4" type="video/mp4" />
+		<source src="media/videos/video-test.m4v" type="video/mp4" />
+		<source src="media/videos/video-test.webm" type="video/webm" />
+		<p>Seu navegador não é compatível com o vídeo, para instalar clique em um dos tipos de arquivos disponíveis.</p>
+		<ul>
+			<li><a href="media/videos/video-test.mp4" download="video-test.mp4" type="video/mp4">MP4</a> (recomendado)</li>
+			<li><a href="media/videos/video-test.m4v" download="video-test.m4v" type="video/mp4">M4V</a></li>
+			<li><a href="media/videos/video-test.webm" download="video-test.webm" type="video/webm">WEBM</a></li>
+		</ul>
+	</video>
+	
+	<h1>Incorporando um vídeo do YouTube</h1>
+	<iframe width="450" height="315" src="https://www.youtube.com/embed/pApgPhlNRyo?si=Tpj_Xtl9TQukqbv3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	<h1>Incorporando um vídeo no Vimeo</h1>
+	<div style="padding:56.22% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/468721708?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="among us"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

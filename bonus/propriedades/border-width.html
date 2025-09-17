@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Propriedade: border-width</title>
+	<style type="text/css" media="all">
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		
+		body {
+			width: 100vw;
+			height: 100dvh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+			color: white;
+		}
+		
+		div {
+			border-color: white;
+			border-style: solid;
+		}
+		
+		div.border-width-medium {
+			border-width: medium;
+		}
+		
+		div.border-width-thin {
+			border-width: thin;
+		}
+		div.border-width-thick {
+			border-width: thick;
+		}
+	</style>
+</head>
+<body>
+	<div class="border-width-medium">Medium</div>
+	<div class="border-width-thin">Thin</div>
+	<div class="border-width-thick">Thick</div>
+</body>
+</html>

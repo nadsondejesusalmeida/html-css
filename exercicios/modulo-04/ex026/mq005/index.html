@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Query</title>
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="styles/media-query.css" type="text/css" media="all" />
+</head>
+<body onresize="changedSize()">
+	<header>
+		<h1>Meu Site</h1>
+		<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" id="menu-icon" onclick="clickMenu()"><path fill="currentColor" d="M7.5 36q-.65 0-1.075-.425Q6 35.15 6 34.5q0-.65.425-1.075Q6.85 33 7.5 33h33q.65 0 1.075.425Q42 33.85 42 34.5q0 .65-.425 1.075Q41.15 36 40.5 36Zm0-10.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5h33q.65 0 1.075.425Q42 23.35 42 24q0 .65-.425 1.075-.425.425-1.075.425Zm0-10.5q-.65 0-1.075-.425Q6 14.15 6 13.5q0-.65.425-1.075Q6.85 12 7.5 12h33q.65 0 1.075.425Q42 12.85 42 13.5q0 .65-.425 1.075Q41.15 15 40.5 15Z"/></svg>
+		<nav id="items">
+			<ul>
+				<li><a href="#">Opção 1</a></li>
+				<li><a href="#">Opção 2</a></li>
+				<li><a href="#">Opção 3</a></li>
+				<li><a href="#">Opção 4</a></li>
+				<li><a href="#">Opção 5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<h2>Media Query</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, necessitatibus, beatae. Iste quasi earum a molestiae eligendi, rem laborum quaerat consequatur, vero cupiditate ducimus tenetur optio velit reprehenderit quo dolores. Pariatur voluptate ut soluta maiores consectetur saepe commodi labore quod magnam harum ipsum vel vero facilis, excepturi, deleniti, dolore voluptatibus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt mollitia quia itaque quas nobis voluptatum, veniam adipisci necessitatibus aliquam nemo sequi explicabo atque optio cum unde odio blanditiis asperiores voluptatem, ab eius autem ullam quisquam amet, laboriosam. In quia assumenda sapiente nostrum, quaerat praesentium nisi ut sed quidem. Adipisci, deleniti.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea obcaecati itaque nam deleniti ipsam corrupti id non. Quae, dicta, sequi. Sint eveniet laboriosam aperiam, et cupiditate quod id exercitationem dolorum dignissimos quasi facilis blanditiis nobis voluptatem amet veritatis ipsum quas quis officiis animi consectetur nesciunt explicabo perspiciatis quaerat. Explicabo, architecto!</p>
+		</article>
+	</main>
+	<script>
+		function changedSize() {
+			if (window.innerWidth >= 768) {
+				items.style.display = 'block'
+			} else {
+				items.style.display = 'none';
+			}
+		}
+		
+		function clickMenu() {
+			if (items.style.display == 'block') {
+				items.style.display = 'none';
+			} else {
+				items.style.display = 'block';
+			}
+		}
+	</script>
+</body>
+</html>

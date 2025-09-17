@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Media</title>
+</head>
+
+<body>
+	<h1>Imagem dinâmica</h1>
+	<p>Essa imagem está adaptada en diversas plataformas.</p>
+	<picture>
+		<source media="(max-width: 350px)" srcset="media/images/small-100x100px.jpg" type="image/jpeg" />
+		<source media="(max-width: 750px)" srcset="media/images/intermediary-300x300px.jpg" type="image/jpeg" />
+		<source media="(max-width: 1050px)" srcset="media/images/medium-700x700px.jpg" type="image/jpeg" />
+		<img src="media/images/big-1000x1000px.jpg" alt="Imagem flexível" />
+	</picture>
+	
+	<h2>Áudio</h2>
+	<audio preload="metadata" controls>
+		<source src="media/audios/the-resistance.skillet.m4a" type="audio/mp4" />
+		<source src="media/audios/the-resistance.skillet.mp3" type="audio/mpeg" />
+		<source src="media/audios/the-resistance.skillet.ogg" type="audio/ogg" />
+		<p>Seu navegador não é compatível com áudio, você pode instalar clicando em um dos tipos de áudio abaixo:</p>
+		<ul>
+			<li><a href="media/audios/the-resistance.skillet.m4a" download="the-resistance.skillet.m4a" type="audio/mp4">MP4</a> (recomendado)</li>
+			<li><a href="media/audios/the-resistance.skillet.mp3" download="the-resistance.skillet.mp3" type="audio/mpeg">MP3</a></li>
+			<li><a href="media/audios/the-resistance.skillet.ogg" download="the-resistance.skillet.ogg" type="audio/ogg">OGG</a></li>
+		</ul>
+	</audio>
+</body>
+</html> 

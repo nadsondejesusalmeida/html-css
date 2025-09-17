@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tag: details</title>
+	<style type="text/css" media="all">
+		details {
+			cursor: pointer;
+		}
+		
+		summary {
+			padding-left: 20px;
+			position: relative;
+			list-style: none;
+		}
+		
+		summary::before {
+			content: '▶';
+			position: absolute;
+			left: 0;
+			transition: tramsform .2s;
+		}
+		
+		details[open] summary::before {
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+<body>
+	<details>
+		<summary>Clica-me</summary>
+		<p>Conteúdo extra</p>
+	</details>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tag: template</title>
+</head>
+<body>
+	<template>
+		<li>João</li>
+	</template>
+	<ul>
+		
+	</ul>
+	<button type="button">Adicionar</button>
+	<script>
+		const template = document.querySelector('template');
+		const ul = document.querySelector('ul');
+		const button = document.querySelector('button');
+		
+		button.addEventListener('click', e => {
+			ul.append(template.content.cloneNode(true));
+		});
+	</script>
+</body>
+</html>
